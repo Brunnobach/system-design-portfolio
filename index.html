@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Design Portfolio | Brunno Bachmann</title>
+    <style>
+        :root { --primary: #5a4fcf; --dark: #1a1a2e; --light: #f4f4f4; --text: #333; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; background: var(--light); color: var(--text); line-height: 1.6; }
+        header { background: linear-gradient(135deg, var(--dark), var(--primary)); color: white; padding: 4rem 2rem; text-align: center; }
+        header h1 { margin: 0; font-size: 2.5rem; }
+        header p { max-width: 600px; margin: 1rem auto 0; font-size: 1.1rem; opacity: 0.9; }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        .section { background: white; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .section h2 { color: var(--primary); margin-top: 0; }
+        .case-card { border-left: 4px solid var(--primary); padding: 1rem; margin: 1rem 0; background: #f9f9f9; border-radius: 0 8px 8px 0; }
+        .case-card h3 { margin-top: 0; }
+        .btn { display: inline-block; background: var(--primary); color: white; padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; margin-top: 1rem; }
+        .btn:hover { background: #4a3fbf; }
+        footer { text-align: center; padding: 2rem; color: #666; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📐 System Design Portfolio</h1>
+        <p>Architecture case studies, trade-off analyses and decision records for industrial, sustainability and AI systems.</p>
+        <a href="https://github.com/Brunnobach/system-design-portfolio" class="btn">View on GitHub</a>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>What this portfolio demonstrates</h2>
+            <p>Ability to design scalable systems from requirements to architecture, document engineering decisions and communicate trade-offs to technical and non-technical stakeholders.</p>
+        </div>
+
+        <div class="section">
+            <h2>Case Studies</h2>
+            <div class="case-card">
+                <h3>🌱 Biogas Monitoring Platform</h3>
+                <p>IoT, time-series database, alerting and dashboards for renewable energy operations.</p>
+            </div>
+            <div class="case-card">
+                <h3>📊 ESG Data Platform</h3>
+                <p>Multi-tenant data ingestion, ESG KPI calculation and reporting for sustainability teams.</p>
+            </div>
+            <div class="case-card">
+                <h3>🏭 Industrial IoT Platform</h3>
+                <p>MQTT ingestion, stream processing and SCADA-like monitoring for manufacturing.</p>
+            </div>
+            <div class="case-card">
+                <h3>🤖 RAG Document Assistant</h3>
+                <p>Vector database, embedding pipeline and LLM integration for technical Q&A.</p>
+            </div>
+            <div class="case-card">
+                <h3>🏢 Sales Intelligence SaaS</h3>
+                <p>Multi-workspace architecture, AI agents and event-driven design for B2B SaaS.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Architecture Decision Records</h2>
+            <p>Each case study includes ADRs covering database choices, communication protocols, AI integration patterns and build-vs-buy decisions.</p>
+        </div>
+
+        <div class="section">
+            <h2>About the author</h2>
+            <p>Created by <strong>Brunno Bachmann</strong>, CTO and engineering leader transitioning into Solutions Architecture and Technical Product Management.</p>
+            <a href="https://www.linkedin.com/in/brunno-bachmann-865429173">LinkedIn</a> · 
+            <a href="https://github.com/Brunnobach">GitHub</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Brunno Bachmann · <a href="https://github.com/Brunnobach/system-design-portfolio">GitHub Repository</a></p>
+    </footer>
+</body>
+</html>
