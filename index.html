@@ -5,66 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>System Design Portfolio | Brunno Bachmann</title>
     <style>
-        :root { --primary: #5a4fcf; --dark: #1a1a2e; --light: #f4f4f4; --text: #333; }
+        :root { --primary: #2563eb; --dark: #0f172a; --light: #f8fafc; --text: #334155; }
         body { font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; background: var(--light); color: var(--text); line-height: 1.6; }
         header { background: linear-gradient(135deg, var(--dark), var(--primary)); color: white; padding: 4rem 2rem; text-align: center; }
         header h1 { margin: 0; font-size: 2.5rem; }
-        header p { max-width: 600px; margin: 1rem auto 0; font-size: 1.1rem; opacity: 0.9; }
-        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        header p { max-width: 650px; margin: 1rem auto 0; font-size: 1.1rem; opacity: 0.9; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
         .section { background: white; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
         .section h2 { color: var(--primary); margin-top: 0; }
-        .case-card { border-left: 4px solid var(--primary); padding: 1rem; margin: 1rem 0; background: #f9f9f9; border-radius: 0 8px 8px 0; }
-        .case-card h3 { margin-top: 0; }
-        .btn { display: inline-block; background: var(--primary); color: white; padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; margin-top: 1rem; }
-        .btn:hover { background: #4a3fbf; }
+        .card { border-left: 4px solid var(--primary); padding-left: 1rem; margin-bottom: 1.5rem; }
+        .card h3 { margin: 0 0 0.5rem; }
+        .card a { color: var(--primary); text-decoration: none; font-weight: 600; }
+        .btn { display: inline-block; background: var(--primary); color: white; padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; margin: 0.5rem 0.5rem 0 0; }
+        .btn:hover { background: #1d4ed8; }
+        .btn.secondary { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
+        .btn.secondary:hover { background: var(--primary); color: white; }
         footer { text-align: center; padding: 2rem; color: #666; font-size: 0.9rem; }
+        .skills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
+        .skill { background: #e0e7ff; color: #3730a3; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; }
     </style>
 </head>
 <body>
     <header>
-        <h1>📐 System Design Portfolio</h1>
-        <p>Architecture case studies, trade-off analyses and decision records for industrial, sustainability and AI systems.</p>
+        <h1>🏗️ System Design Portfolio</h1>
+        <p>Architecture case studies, decision records and diagrams for industrial and sustainability systems.</p>
         <a href="https://github.com/Brunnobach/system-design-portfolio" class="btn">View on GitHub</a>
+        <a href="https://www.linkedin.com/in/brunno-bachmann-865429173" class="btn secondary">Connect on LinkedIn</a>
     </header>
 
     <div class="container">
         <div class="section">
             <h2>What this portfolio demonstrates</h2>
-            <p>Ability to design scalable systems from requirements to architecture, document engineering decisions and communicate trade-offs to technical and non-technical stakeholders.</p>
+            <div class="skills">
+                <span class="skill">System Design</span>
+                <span class="skill">Architecture Decisions</span>
+                <span class="skill">Trade-off Analysis</span>
+                <span class="skill">Scalability</span>
+                <span class="skill">MLOps</span>
+                <span class="skill">IoT</span>
+                <span class="skill">RAG</span>
+                <span class="skill">ESG</span>
+            </div>
+            <p>A collection of real-world system design problems solved with architecture diagrams, decision records and honest trade-off analysis. Built for Solutions Architect and Applied AI roles.</p>
+        </div>
+
+        <div class="section">
+            <h2>Architecture Decision Records (ADRs)</h2>
+            <div class="card">
+                <h3>ADR 001: Biogas MLOps Platform</h3>
+                <p>Why scikit-learn, MLflow and FastAPI were chosen for a production ML pipeline.</p>
+                <a href="https://github.com/Brunnobach/system-design-portfolio/blob/main/adrs/001-biogas-mlops-architecture.md">Read ADR →</a>
+            </div>
+            <div class="card">
+                <h3>ADR 002: Industrial IoT Platform</h3>
+                <p>MQTT, InfluxDB and Grafana for real-time sensor monitoring at scale.</p>
+                <a href="https://github.com/Brunnobach/system-design-portfolio/blob/main/adrs/002-industrial-iot-platform.md">Read ADR →</a>
+            </div>
+            <div class="card">
+                <h3>ADR 003: RAG Technical Assistant</h3>
+                <p>Local embeddings and ChromaDB for grounded, cited document Q&A.</p>
+                <a href="https://github.com/Brunnobach/system-design-portfolio/blob/main/adrs/003-rag-technical-assistant.md">Read ADR →</a>
+            </div>
         </div>
 
         <div class="section">
             <h2>Case Studies</h2>
-            <div class="case-card">
-                <h3>🌱 Biogas Monitoring Platform</h3>
-                <p>IoT, time-series database, alerting and dashboards for renewable energy operations.</p>
+            <div class="card">
+                <h3>🌱 Biogas MLOps Pipeline</h3>
+                <p>Forecasting daily biogas production with R² = 0.965.</p>
+                <a href="https://github.com/Brunnobach/system-design-portfolio/blob/main/case-studies/biogas-mlops.md">Read case study →</a>
             </div>
-            <div class="case-card">
-                <h3>📊 ESG Data Platform</h3>
-                <p>Multi-tenant data ingestion, ESG KPI calculation and reporting for sustainability teams.</p>
+            <div class="card">
+                <h3>⚡ Industrial IoT for Biogas Plants</h3>
+                <p>MQTT ingestion, InfluxDB storage and Grafana dashboards for 100+ sensors.</p>
+                <a href="https://github.com/Brunnobach/system-design-portfolio/blob/main/case-studies/industrial-iot-biogas.md">Read case study →</a>
             </div>
-            <div class="case-card">
-                <h3>🏭 Industrial IoT Platform</h3>
-                <p>MQTT ingestion, stream processing and SCADA-like monitoring for manufacturing.</p>
+            <div class="card">
+                <h3>🤖 RAG for Technical Documents</h3>
+                <p>Local RAG assistant with PDF upload, citations and no API keys.</p>
+                <a href="https://github.com/Brunnobach/system-design-portfolio/blob/main/case-studies/rag-technical-documents.md">Read case study →</a>
             </div>
-            <div class="case-card">
-                <h3>🤖 RAG Document Assistant</h3>
-                <p>Vector database, embedding pipeline and LLM integration for technical Q&A.</p>
+            <div class="card">
+                <h3>🌍 ESG Data Platform</h3>
+                <p>Carbon footprint, intensity metrics and ESG scores with audit trail.</p>
+                <a href="https://github.com/Brunnobach/system-design-portfolio/blob/main/case-studies/esg-data-platform.md">Read case study →</a>
             </div>
-            <div class="case-card">
-                <h3>🏢 Sales Intelligence SaaS</h3>
-                <p>Multi-workspace architecture, AI agents and event-driven design for B2B SaaS.</p>
+            <div class="card">
+                <h3>🧠 Multi-Agent Sales Platform</h3>
+                <p>Hierarchical AI agents for sales research, writing and scheduling.</p>
+                <a href="https://github.com/Brunnobach/system-design-portfolio/blob/main/case-studies/multi-agent-sales-platform.md">Read case study →</a>
             </div>
-        </div>
-
-        <div class="section">
-            <h2>Architecture Decision Records</h2>
-            <p>Each case study includes ADRs covering database choices, communication protocols, AI integration patterns and build-vs-buy decisions.</p>
         </div>
 
         <div class="section">
             <h2>About the author</h2>
-            <p>Created by <strong>Brunno Bachmann</strong>, CTO and engineering leader transitioning into Solutions Architecture and Technical Product Management.</p>
+            <p>Built by <strong>Brunno Bachmann</strong>, engineering leader and CTO with 6+ years in renewable energy, now transitioning into Solutions Architecture and Applied AI.</p>
             <a href="https://www.linkedin.com/in/brunno-bachmann-865429173">LinkedIn</a> · 
             <a href="https://github.com/Brunnobach">GitHub</a>
         </div>

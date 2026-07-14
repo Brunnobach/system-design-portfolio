@@ -1,91 +1,74 @@
 # System Design Portfolio
 
-**System design case studies and architecture decision records for industrial and sustainability systems**
+**Architecture case studies, decision records and diagrams for industrial and sustainability systems.**
 
-A public collection of architecture case studies, trade-off analyses and decision records built while preparing for Solutions Architect and Technical Product Manager roles.
+This repository collects system design work that demonstrates how to translate business requirements into scalable, maintainable technical architectures. Each case study includes requirements, architecture diagrams, trade-off analysis and lessons learned.
 
 ---
 
 ## 🌐 Live Portfolio
 
-📐 **Browse the case studies:** https://brunnobach.github.io/system-design-portfolio/
+📖 **Browse the case studies:** https://brunnobach.github.io/system-design-portfolio/
 
 ---
 
-## 🎯 Purpose
+## 📁 Contents
 
-This repository demonstrates the ability to:
+### Architecture Decision Records (ADRs)
+- [ADR 001: Biogas MLOps Platform](adrs/001-biogas-mlops-architecture.md)
+- [ADR 002: Industrial IoT Platform](adrs/002-industrial-iot-platform.md)
+- [ADR 003: RAG Technical Assistant](adrs/003-rag-technical-assistant.md)
 
-- Design scalable, reliable systems from requirements to architecture
-- Make and document engineering trade-offs
-- Communicate architecture decisions clearly to technical and non-technical audiences
-- Apply system design patterns to real-world domains (energy, sustainability, IoT, AI)
-
----
-
-## 📁 Case Studies
-
-| Case Study | Domain | Topics |
-|------------|--------|--------|
-| **Biogas Monitoring Platform** | Renewable Energy | IoT, time-series DB, alerting, dashboards |
-| **ESG Data Platform** | Sustainability | Multi-tenant data ingestion, reporting, compliance |
-| **Industrial IoT Platform** | Manufacturing | MQTT, stream processing, SCADA integration |
-| **RAG Document Assistant** | Applied AI | Vector DB, LLM, embedding pipeline, caching |
-| **Sales Intelligence SaaS** | B2B SaaS | Multi-workspace, agents, event-driven architecture |
+### Case Studies
+- [Biogas MLOps Pipeline](case-studies/biogas-mlops.md)
+- [Industrial IoT for Biogas Plants](case-studies/industrial-iot-biogas.md)
+- [RAG for Technical Documents](case-studies/rag-technical-documents.md)
+- [ESG Data Platform](case-studies/esg-data-platform.md)
+- [Multi-Agent Sales Platform](case-studies/multi-agent-sales-platform.md)
 
 ---
 
-## 📐 Architecture Decision Records (ADRs)
+## 🎯 What this portfolio demonstrates
 
-Each case study includes:
-
-- **Context:** Why this decision was needed
-- **Options considered:** Alternatives and their pros/cons
-- **Decision:** What was chosen
-- **Consequences:** Trade-offs and risks
-
----
-
-## 🛠️ Tools Used
-
-- Markdown for documentation
-- Mermaid for diagrams
-- GitHub Pages for publishing
-- Draw.io (optional) for detailed diagrams
+| Skill | Evidence |
+|-------|----------|
+| **System design thinking** | End-to-end architecture for production systems |
+| **Trade-off analysis** | ADRs with alternatives and consequences |
+| **Domain expertise** | Renewable energy, biogas, sustainability, industrial IoT |
+| **Communication** | Clear diagrams and written explanations for technical and non-technical audiences |
+| **Production awareness** | Scalability, observability, data quality, security |
 
 ---
 
-## 📂 Repository Structure
+## 🛠️ How to use this portfolio
 
-```
-system-design-portfolio/
-├── docs/
-│   ├── case-studies/
-│   │   ├── biogas-monitoring.md
-│   │   ├── esg-data-platform.md
-│   │   ├── industrial-iot.md
-│   │   ├── rag-assistant.md
-│   │   └── sales-intelligence-saas.md
-│   ├── adrs/
-│   │   ├── 001-why-postgresql.md
-│   │   ├── 002-why-mqtt.md
-│   │   ├── 003-why-vector-db.md
-│   │   └── 004-why-monolith-first.md
-│   └── index.md
-├── assets/
-│   └── diagrams/         # Architecture diagrams
-├── _config.yml
-└── README.md
-```
+- **Recruiters / hiring managers:** Browse the case studies to see how I approach complex technical problems.
+- **Engineers:** Use the ADRs as a template for documenting your own architecture decisions.
+- **Teams:** Reference the trade-off tables to facilitate architecture discussions.
 
 ---
 
-## 🤝 Connect
+## 🚀 Featured case studies
 
-Created by [Brunno Bachmann](https://www.linkedin.com/in/brunno-bachmann-865429173) as part of a transition into Solutions Architecture and Technical Leadership.
+### Biogas MLOps Pipeline
+Forecasting daily biogas production with MLflow, FastAPI and Docker. Demonstrates reproducible ML pipelines and production deployment.
+
+### Industrial IoT Platform
+Real-time sensor ingestion with MQTT, InfluxDB and Grafana for monitoring industrial biodigesters at scale.
+
+### RAG Technical Assistant
+Retrieval-augmented generation for querying technical manuals and SOPs, with citations and local embeddings.
 
 ---
 
-## 📄 License
+## 📬 Connect
+
+Built by [Brunno Bachmann](https://www.linkedin.com/in/brunno-bachmann-865429173) as part of a transition into Solutions Architecture and Applied AI.
+
+If you are interested in energy transition, industrial digitalization, sustainability tech or MLOps, feel free to connect.
+
+---
+
+## License
 
 MIT
