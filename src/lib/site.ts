@@ -6,7 +6,7 @@ export const site = {
   summary:
     "Engineering leader and CTO with 6+ years in renewable energy. I translate messy operational constraints into clear architectures, honest trade-offs, and systems that operators can trust.",
   location: "Open to opportunities worldwide",
-  email: null as string | null,
+  email: "brunnobachmann@gmail.com" as string | null,
   links: {
     github: "https://github.com/Brunnobach",
     linkedin: "https://www.linkedin.com/in/brunno-bachmann-865429173",

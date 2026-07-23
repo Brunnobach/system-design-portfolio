@@ -33,7 +33,7 @@ export const caseStudies: CaseStudyMeta[] = [
       "Forecast daily biogas production to optimize energy sales, maintenance, and substrate mix.",
     outcome: "R² = 0.965 · API < 100 ms",
     stack: ["scikit-learn", "MLflow", "FastAPI", "Docker"],
-    accent: "#9aff6b",
+    accent: "#0f7a4a",
     file: "biogas-mlops.md",
   },
   {
@@ -44,7 +44,7 @@ export const caseStudies: CaseStudyMeta[] = [
       "Real-time monitoring for 50+ biodigesters — temperature, pH, pressure, and gas flow at scale.",
     outcome: "100 sensors @ 1 Hz · < 1% CPU",
     stack: ["MQTT", "InfluxDB", "Grafana", "FastAPI"],
-    accent: "#5eead4",
+    accent: "#0a6b7a",
     file: "industrial-iot-biogas.md",
   },
   {
@@ -55,7 +55,7 @@ export const caseStudies: CaseStudyMeta[] = [
       "Grounded Q&A over manuals and SOPs with citations — running locally, no API keys.",
     outcome: "Cited answers from 50-page manuals",
     stack: ["ChromaDB", "sentence-transformers", "PDF"],
-    accent: "#a5b4fc",
+    accent: "#3b5b8c",
     file: "rag-technical-documents.md",
   },
   {
@@ -66,7 +66,7 @@ export const caseStudies: CaseStudyMeta[] = [
       "Centralize emissions and ESG metrics with auditability instead of fragile spreadsheets.",
     outcome: "Footprint · intensity · audit trail",
     stack: ["PostgreSQL", "FastAPI", "Pydantic", "GHG Protocol"],
-    accent: "#86efac",
+    accent: "#1f6b4a",
     file: "esg-data-platform.md",
   },
   {
@@ -77,7 +77,7 @@ export const caseStudies: CaseStudyMeta[] = [
       "Hierarchical AI agents for research, writing, and scheduling with persistent memory.",
     outcome: "Working multi-agent prototype",
     stack: ["Next.js", "FastAPI", "PostgreSQL", "Docker"],
-    accent: "#fcd34d",
+    accent: "#c45c16",
     file: "multi-agent-sales-platform.md",
   },
 ];

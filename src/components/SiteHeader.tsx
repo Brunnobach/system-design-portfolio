@@ -25,12 +25,15 @@ export function SiteHeader() {
     <header
       className={`fixed inset-x-0 top-0 z-40 transition-all duration-500 ${
         scrolled
-          ? "border-b border-[var(--line)] bg-[rgba(6,9,8,0.82)] backdrop-blur-md"
+          ? "border-b border-[var(--line)] bg-[rgba(244,247,244,0.88)] backdrop-blur-md"
           : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
-        <Link href="/" className="font-[family-name:var(--font-display)] text-sm font-semibold tracking-[0.18em] uppercase">
+        <Link
+          href="/"
+          className="font-[family-name:var(--font-display)] text-sm font-semibold tracking-[0.18em] uppercase"
+        >
           {site.name.split(" ")[0]}
           <span className="text-[var(--accent)]">.</span>
         </Link>
@@ -39,7 +42,7 @@ export function SiteHeader() {
             <a
               key={link.href}
               href={link.href}
-              className="transition-colors hover:text-[var(--text)]"
+              className="transition-colors hover:text-[var(--ink)]"
             >
               {link.label}
             </a>
@@ -49,7 +52,7 @@ export function SiteHeader() {
           href={site.links.linkedin}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-full border border-[var(--line-strong)] px-3.5 py-1.5 text-xs tracking-wide text-[var(--text)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
+          className="border border-[var(--line-strong)] px-3.5 py-1.5 text-xs tracking-wide text-[var(--ink)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
         >
           LinkedIn
         </a>

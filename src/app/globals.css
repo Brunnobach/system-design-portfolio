@@ -1,19 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #060908;
-  --bg-elevated: #0c1210;
-  --bg-soft: #101816;
-  --line: rgba(154, 255, 107, 0.12);
-  --line-strong: rgba(230, 235, 232, 0.14);
-  --text: #e8ede9;
-  --text-muted: #8f9f95;
-  --text-faint: #5f7066;
-  --accent: #9aff6b;
-  --accent-dim: rgba(154, 255, 107, 0.14);
-  --accent-deep: #3d8b7a;
-  --glow: rgba(154, 255, 107, 0.22);
-  --danger: #ff7a59;
+  --bg: #e8ede9;
+  --bg-elevated: #f4f7f4;
+  --bg-soft: #dde5df;
+  --ink: #0e1712;
+  --text: #18241c;
+  --text-muted: #4d5f54;
+  --text-faint: #7a8a80;
+  --line: rgba(14, 23, 18, 0.1);
+  --line-strong: rgba(14, 23, 18, 0.18);
+  --accent: #0f7a4a;
+  --accent-soft: rgba(15, 122, 74, 0.1);
+  --accent-deep: #0a5232;
+  --signal: #c45c16;
   --font-display: var(--font-syne), system-ui, sans-serif;
   --font-serif: var(--font-instrument), Georgia, serif;
   --font-body: var(--font-dm-sans), system-ui, sans-serif;
@@ -23,8 +23,6 @@
   --color-background: var(--bg);
   --color-foreground: var(--text);
   --font-sans: var(--font-body);
-  --font-display: var(--font-display);
-  --font-serif: var(--font-serif);
 }
 
 * {
@@ -47,7 +45,7 @@ body {
 
 ::selection {
   background: var(--accent);
-  color: #06100a;
+  color: #f4f7f4;
 }
 
 a {
@@ -60,8 +58,9 @@ a {
   position: fixed;
   inset: 0;
   z-index: 50;
-  opacity: 0.045;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.035;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 .atmosphere {
@@ -69,10 +68,9 @@ a {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 55% at 70% 15%, rgba(61, 139, 122, 0.28), transparent 55%),
-    radial-gradient(ellipse 55% 45% at 15% 80%, rgba(154, 255, 107, 0.1), transparent 50%),
-    radial-gradient(ellipse 40% 30% at 85% 75%, rgba(165, 180, 252, 0.08), transparent 45%),
-    linear-gradient(180deg, #060908 0%, #08110d 45%, #060908 100%);
+    radial-gradient(ellipse 70% 50% at 78% 18%, rgba(15, 122, 74, 0.14), transparent 58%),
+    radial-gradient(ellipse 50% 40% at 8% 88%, rgba(196, 92, 22, 0.08), transparent 55%),
+    linear-gradient(165deg, #f2f6f2 0%, #e8ede9 42%, #dfe8e2 100%);
 }
 
 .grid-fade {
@@ -80,10 +78,10 @@ a {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(154, 255, 107, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(154, 255, 107, 0.05) 1px, transparent 1px);
-  background-size: 72px 72px;
-  mask-image: radial-gradient(ellipse 70% 60% at 60% 35%, black 10%, transparent 70%);
+    linear-gradient(rgba(15, 122, 74, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 122, 74, 0.07) 1px, transparent 1px);
+  background-size: 68px 68px;
+  mask-image: radial-gradient(ellipse 75% 65% at 65% 30%, black 15%, transparent 72%);
 }
 
 .prose-portfolio {
@@ -95,7 +93,7 @@ a {
 .prose-portfolio h1,
 .prose-portfolio h2,
 .prose-portfolio h3 {
-  color: var(--text);
+  color: var(--ink);
   font-family: var(--font-display);
   letter-spacing: -0.02em;
   margin-top: 2.25rem;
@@ -139,17 +137,17 @@ a {
 .prose-portfolio code {
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.9em;
-  background: var(--accent-dim);
-  color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent-deep);
   padding: 0.12rem 0.35rem;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 .prose-portfolio pre {
   overflow-x: auto;
-  background: #0a100e;
+  background: #102018;
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 1rem 1.15rem;
   margin: 1.25rem 0;
 }
@@ -157,7 +155,7 @@ a {
 .prose-portfolio pre code {
   background: transparent;
   padding: 0;
-  color: #c8d6cc;
+  color: #d7e4db;
 }
 
 .prose-portfolio table {
@@ -175,7 +173,7 @@ a {
 
 .prose-portfolio th {
   background: var(--bg-soft);
-  color: var(--text);
+  color: var(--ink);
 }
 
 @keyframes float-node {
@@ -184,24 +182,24 @@ a {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-8px);
+    transform: translateY(-6px);
   }
 }
 
 @keyframes pulse-line {
   0%,
   100% {
-    opacity: 0.25;
+    opacity: 0.35;
   }
   50% {
-    opacity: 0.7;
+    opacity: 0.85;
   }
 }
 
 @keyframes rise-in {
   from {
     opacity: 0;
-    transform: translateY(18px);
+    transform: translateY(16px);
   }
   to {
     opacity: 1;
@@ -210,20 +208,20 @@ a {
 }
 
 .animate-rise {
-  animation: rise-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: rise-in 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .delay-1 {
-  animation-delay: 0.12s;
+  animation-delay: 0.1s;
 }
 .delay-2 {
-  animation-delay: 0.24s;
+  animation-delay: 0.2s;
 }
 .delay-3 {
-  animation-delay: 0.36s;
+  animation-delay: 0.32s;
 }
 .delay-4 {
-  animation-delay: 0.48s;
+  animation-delay: 0.44s;
 }
 
 @media (prefers-reduced-motion: reduce) {
