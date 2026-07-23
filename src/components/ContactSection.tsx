@@ -13,7 +13,7 @@ export function ContactSection() {
             Contact
           </p>
           <h2 className="max-w-3xl font-[family-name:var(--font-display)] text-3xl tracking-tight text-[var(--ink)] sm:text-5xl">
-            Looking for a Solutions Architect who can own the hard trade-offs?
+            Looking for a Solutions Architect who can own the hard tradeoffs?
           </h2>
           <p className="mt-5 max-w-xl text-[var(--text-muted)]">
             I am open to international roles in Solutions Architecture, Applied

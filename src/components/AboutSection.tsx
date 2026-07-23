@@ -19,9 +19,9 @@ export function AboutSection() {
             {site.summary}
           </p>
           <p className="mt-5 text-[var(--text-muted)]">
-            This portfolio is intentionally focused: system design thinking,
-            trade-off analysis, and production awareness across MLOps, IoT, RAG,
-            and ESG platforms.
+            This portfolio stays focused on system design thinking, tradeoff
+            analysis, and production awareness across MLOps, IoT, RAG, and ESG
+            platforms.
           </p>
         </Reveal>
 

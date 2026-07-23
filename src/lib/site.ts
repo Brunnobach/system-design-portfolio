@@ -2,9 +2,9 @@ export const site = {
   name: "Brunno Bachmann",
   role: "Solutions Architect · Applied AI",
   tagline:
-    "I design production systems for industrial and sustainability domains — where architecture decisions have real-world consequences.",
+    "I design production systems for industrial and sustainability domains, where architecture decisions carry real world consequences.",
   summary:
-    "Engineering leader and CTO with 6+ years in renewable energy. I translate messy operational constraints into clear architectures, honest trade-offs, and systems that operators can trust.",
+    "Engineering leader and CTO with 6+ years in renewable energy. I turn messy operational constraints into clear architectures, honest tradeoffs, and systems that operators can trust.",
   location: "Open to opportunities worldwide",
   email: "brunnobachmann@gmail.com" as string | null,
   links: {

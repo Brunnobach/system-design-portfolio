@@ -14,11 +14,11 @@ export function DecisionsSection() {
             Architecture Decision Records
           </p>
           <h2 className="max-w-2xl font-[family-name:var(--font-display)] text-3xl tracking-tight text-[var(--ink)] sm:text-5xl">
-            The reasoning behind the stack — not just the diagram.
+            The reasoning behind the stack, not just the diagram.
           </h2>
           <p className="mt-5 max-w-2xl text-[var(--text-muted)]">
             Each ADR captures context, decision, alternatives, and consequences.
-            Built for hiring managers who want to see how I think under
+            Written for hiring managers who want to see how I think under
             constraints.
           </p>
         </Reveal>
