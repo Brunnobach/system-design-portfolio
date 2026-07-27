@@ -4,7 +4,9 @@
 
 Built with **Next.js** for international Solutions Architect / Applied AI applications.
 
-## Live preview
+## Live site
+
+**GitHub Pages:** https://brunnobach.github.io/system-design-portfolio/
 
 Run locally:
 
@@ -14,6 +16,12 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
+
+Build for GitHub Pages:
+
+```bash
+npm run build:pages
+```
 
 ## Screenshots
 

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { href } from "@/lib/paths";
 import { site } from "@/lib/site";
 
 const links = [
@@ -41,7 +42,7 @@ export function SiteHeader() {
           {links.map((link) => (
             <a
               key={link.href}
-              href={link.href}
+              href={href(link.href)}
               className="transition-colors hover:text-[var(--ink)]"
             >
               {link.label}
